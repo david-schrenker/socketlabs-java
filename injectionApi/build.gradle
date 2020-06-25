@@ -80,6 +80,9 @@ uploadArchives {
                 MavenDeployment deployment -> signing.signPom(deployment)
             }
 
+
+
+            /*
             repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2") {
                 authentication(userName: sonatypeUsername, password: sonatypePassword)
             }
@@ -87,6 +90,8 @@ uploadArchives {
             snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
                 authentication(userName: sonatypeUsername, password: sonatypePassword)
             }
+            */
+
             
             pom.project {
 
@@ -122,10 +127,37 @@ uploadArchives {
                     developer {
                         id 'david-schrenker'
                         name 'David Schrenker'
+                        email 'david.schrenker@socketlabs.com'
+                        organization {
+                            name 'socketlabs'
+                            url 'https://github.com/socketlabs'
+                        }
+                        roles {
+                            role 'Developer'
+                        }
                     }
                     developer {
                         id 'rbrazuk'
                         name 'Ross Brazuk'
+                        organization {
+                            name 'socketlabs'
+                            url 'https://github.com/socketlabs'
+                        }
+                        roles {
+                            role 'Developer'
+                        }
+                    }
+                }
+                contributors {
+                    contributor {
+                        name 'Ryan Lydzinski'
+                        organization {
+                            name 'socketlabs'
+                            url 'https://github.com/socketlabs'
+                        }
+                        roles {
+                            role 'Intern'
+                        }
                     }
                 }
             }.writeTo("$projectDir/pom.xml")

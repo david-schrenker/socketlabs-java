@@ -22,12 +22,30 @@
     <developer>
       <id>david-schrenker</id>
       <name>David Schrenker</name>
+      <email>david.schrenker@socketlabs.com</email>
+      <organization>org.apache.maven.model.Organization@3975f89a</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
     </developer>
     <developer>
       <id>rbrazuk</id>
       <name>Ross Brazuk</name>
+      <organization>org.apache.maven.model.Organization@74020163</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
     </developer>
   </developers>
+  <contributors>
+    <contributor>
+      <name>Ryan Lydzinski</name>
+      <organization>org.apache.maven.model.Organization@735e0b6c</organization>
+      <roles>
+        <role>Intern</role>
+      </roles>
+    </contributor>
+  </contributors>
   <scm>
     <connection>scm:git:git://github.com/socketlabs/socketlabs-java.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:socketlabs/socketlabs-java.git</developerConnection>
